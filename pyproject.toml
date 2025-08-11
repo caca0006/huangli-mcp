@@ -1,0 +1,13 @@
+[project]
+name = "huangli-mcp"
+version = "0.1.0"
+description = "An MCP server that outputs Chinese Huangli (almanac)"
+requires-python = ">=3.9"
+dependencies = [
+  "fastmcp>=0.4.2",
+  "lunar-python>=1.4.0,<1.5",
+  "pytz>=2024.1"
+]
+
+[project.scripts]
+huangli-mcp = "server:main"
